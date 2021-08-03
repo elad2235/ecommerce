@@ -8,6 +8,7 @@ import Register from "./routes/auth/Register";
 import Home from "./routes/Home";
 import RegisterComplete from "./routes/auth/RegisterComplete";
 import Header from "./components/nav/Header";
+import ForgotPassword from "./routes/auth/ForgotPassword";
 
 import { auth } from "./firebase";
 import { useDispatch } from "react-redux";
@@ -44,6 +45,7 @@ function App() {
           <Route exact path="/Login" component={Login} />
           <Route exact path="/Register" component={Register} />
           <Route exact path="/Register/complete" component={RegisterComplete} />
+          <Route exact path="/forgot/password" component={ForgotPassword} />
         </Switch>
       </BrowserRouter>
     </>
